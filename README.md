@@ -21,3 +21,5 @@ Set `JAVAC` to the governed compiler path when required. The library-style class
 ## Packaging additions
 
 README.md records provenance; build.sh declares compilation; .gitignore excludes build output; .gitattributes preserves Java bytes across checkout platforms. Source code is unchanged.
+
+The minimal `Makefile` exposes the same direct `javac --release 17` command to generic frontend build discovery. Use `make` with the delivered JDK on PATH.
